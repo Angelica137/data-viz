@@ -8,3 +8,4 @@ Plotly
 Plotting a line
 scatter plot
 color map
+generating a random walk
