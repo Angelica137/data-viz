@@ -3,7 +3,7 @@
 I am using this project to learn data visualisation python libraries
 
 Matplotlib
-Plotly
+Plotly for interactive vsualisations
 
 Plotting a line
 scatter plot
