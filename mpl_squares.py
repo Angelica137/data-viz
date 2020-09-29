@@ -5,7 +5,7 @@ input_values = [1, 2, 3, 4, 5]
 squares = [1, 4, 9, 16, 25]
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(input_values, squares, linewidth=3)
+ax.scatter(2, 4, s=200)
 
 # Set chart tltile and label axes
 ax.set_title("Square Numbers", fontsize=24)
