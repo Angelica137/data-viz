@@ -2,14 +2,18 @@ import matplotlib.pyplot as plt
 
 from random_walk import RandomWalk
 
+'''Continuously make rws as long as the program is aaive'''
+while True:
+    # Instantiate a random walk
+    rw = RandomWalk()
+    rw.fill_walk()
 
-# Instantiate a random walk
-rw = RandomWalk()
-rw.fill_walk()
+    # Plot the randome walk
+    plt.style.use('classic')
+    fig, ax = plt.subplots()
+    ax.scatter(rw.x_values, rw.y_values, s=15)
+    plt.show()
 
-
-# Plot the randome walk
-plt.style.use('classic')
-fig, ax = plt.subplots()
-ax.scatter(rw.x_values, rw.y_values, s=15)
-plt.show()
+    keep_running = input('Make another walk? (y/n): ')
+    if keep_running == 'n':
+        break
